@@ -37,6 +37,7 @@ dnf install feedbackd phoc phosh squeekboard gnome-shell ModemManager rtl8723cs-
 
 infecho "Enabling graphical boot and lightdm..."
 systemctl disable initial-setup.service
+systemctl disable phosh.service
 systemctl enable lightdm
 systemctl set-default graphical.target
 
