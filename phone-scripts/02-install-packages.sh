@@ -24,7 +24,6 @@ dnf copr enable njha/mobile
 infecho "Removing old kernel..."
 infecho "THIS WILL FAIL, DON'T WORRY ITS PROBABLY OK"
 dnf remove kernel || rpm -e --noscripts kernel-core
-dnf install linux-firmware
 
 infecho "Installing kernel..."
 dnf --disablerepo="*" --enablerepo="copr:copr.fedorainfracloud.org:njha:mobile" install kernel
