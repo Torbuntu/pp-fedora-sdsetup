@@ -18,6 +18,9 @@ infecho "This adds my COPR repository (njha/mobile) and installs phone related p
 infecho "Only functional on Fedora Rawhide."
 infecho "HEAVY WIP, untested"
 
+infecho "Link temp-resolv.conf"
+ln -sfv /etc/tmp-resolv.conf /etc/resolv.conf
+
 infecho "Enabling COPR repository..."
 dnf copr enable njha/mobile
 
